@@ -9,7 +9,7 @@ def index(request):
         'categoria': "Men's Clothing",
         'imagem': "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
     }
-    return render(request, 'main/index.html')
+    return render(request, 'main/index.html', context)
 
 
 def sobre(request):
