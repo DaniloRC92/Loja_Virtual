@@ -119,13 +119,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'))
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 # para carregar arquivos estáticos em ambiente de desenvolvimento
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 # o comando a seguir faz a mesma coisa que o acima, ou seja
@@ -135,6 +128,12 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # somente para ambiente de produção
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # configurações para upload de imagens
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload') # para uploads de arquivos pelos usuários
 MEDIA_URL = '/upload/'
